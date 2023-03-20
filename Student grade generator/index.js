@@ -1,6 +1,14 @@
+//Ask user to input the student's marks
 let mark = prompt("Enter student's mark");
+
+//Make 'marks' into Number data type
 mark = Number(mark);
+
+//Show marks range
 if (mark >= 0 && mark <= 100) {
+
+    
+    //Enter grade criteria
     let grade;
     if (mark > 79) {
         grade = "A";
@@ -13,7 +21,7 @@ if (mark >= 0 && mark <= 100) {
     } else if (mark <40){
         grade = "E"
     }
-    
+    //Print the student's grade
     console.log(grade);
 }
   
